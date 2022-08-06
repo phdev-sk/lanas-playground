@@ -40,7 +40,7 @@ export const DarkmodeSwitch = () => {
           )}
         >
           <motion.div
-            className="bg-slate-200 dark:bg-slate-700 rounded-full w-8 h-8 flex items-center justify-center"
+            className="bg-slate-100 dark:bg-slate-700 rounded-full w-8 h-8 flex items-center justify-center"
             animate={{ x: isSelected ? 16 : 0 }}
           >
             {isDarkmode ? (

@@ -5,5 +5,5 @@ import checker from "vite-plugin-checker";
 
 export default defineConfig({
   plugins: [react(), svgr(), checker({ typescript: true })],
-  base: "./",
+  base: "/",
 });

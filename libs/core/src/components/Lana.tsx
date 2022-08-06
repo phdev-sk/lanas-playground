@@ -1,5 +1,5 @@
 import {
-  BrowserRouter,
+  HashRouter,
   Route as ReactRoute,
   Routes as ReactRoutes,
 } from "react-router-dom";
@@ -15,7 +15,7 @@ export interface ILanaProps {
 export const Lana = ({ modules }: ILanaProps) => {
   return (
     <Provider>
-      <BrowserRouter>
+      <HashRouter>
         <ReactRoutes>
           <ReactRoute path={"/"} element={<Homepage />} />
           {modules.map((module) =>
@@ -30,7 +30,7 @@ export const Lana = ({ modules }: ILanaProps) => {
               )),
           )}
         </ReactRoutes>
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   );
 };

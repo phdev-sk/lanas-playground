@@ -5,7 +5,7 @@ import { Focus } from "./Focus";
 import { Sun, Moon } from "react-feather";
 import { motion } from "framer-motion";
 import cx from "classnames";
-import { useDarkMode } from "./hooks/useDarkmode";
+import { useDarkMode } from "../hooks/useDarkmode";
 
 export const DarkmodeSwitch = () => {
   const [isDarkmode, setDarkmode] = useDarkMode();
@@ -36,17 +36,17 @@ export const DarkmodeSwitch = () => {
         </VisuallyHidden>
         <div
           className={cx(
-            "w-[56px] h-10 transition-all rounded-full shrink-0 flex items-center p-1 text-white bg-slate-300 dark:bg-slate-600",
+            "w-[56px] h-10 rounded-full shrink-0 flex items-center p-1 text-white bg-white border dark:border-slate-700 dark:bg-slate-800",
           )}
         >
           <motion.div
-            className="bg-slate-100 dark:bg-slate-700 rounded-full w-8 h-8 flex items-center justify-center"
+            className="bg-white border dark:border-slate-700 dark:bg-slate-800 rounded-full w-8 h-8 flex items-center justify-center"
             animate={{ x: isSelected ? 16 : 0 }}
           >
             {isDarkmode ? (
-              <Moon className="text-slate-100" />
+              <Moon className="text-slate-100" size={18} />
             ) : (
-              <Sun className="text-slate-500" />
+              <Sun className="text-slate-500" size={18} />
             )}
           </motion.div>
         </div>

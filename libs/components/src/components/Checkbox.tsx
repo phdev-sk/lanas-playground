@@ -42,8 +42,10 @@ export const Checkbox = (props: CheckboxProps) => {
         </VisuallyHidden>
         <div
           className={cx(
-            "w-6 h-6 transition-all rounded shrink-0 flex items-center justify-center text-white",
-            isSelected ? "bg-primary" : "bg-slate-300 dark:bg-slate-600",
+            "w-6 h-6 shrink-0 flex items-center justify-center text-white border dark:border-slate-700",
+            isSelected
+              ? "bg-primary border-primary dark:border-primary"
+              : "bg-white dark:bg-slate-800",
           )}
         >
           <motion.div animate={{ scale: isSelected ? 1 : 0 }}>

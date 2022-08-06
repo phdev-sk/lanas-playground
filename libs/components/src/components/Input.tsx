@@ -47,7 +47,7 @@ export const Input = (props: InputProps) => {
                 y: isLabelMovedUp ? -13 : 10,
               }}
               className={cx(
-                "absolute uppercase text-sm font-bold z-10 left-[14px] px-1 bg-white dark:bg-slate-800 top-0 select-none pointer-events-none",
+                "absolute text-sm font-semibold z-10 left-[14px] px-1 bg-white dark:bg-slate-800 top-0 select-none pointer-events-none",
                 isError
                   ? "text-red-500"
                   : isFocused
@@ -70,6 +70,10 @@ export const Input = (props: InputProps) => {
               className="w-full h-full px-3 bg-transparent"
             />
           </Field>
+          <ErrorMessage
+            errorMessageProps={errorMessageProps}
+            message={errorMessage}
+          />
         </div>
       </Focus>
       {props.description && (
@@ -77,10 +81,6 @@ export const Input = (props: InputProps) => {
           {props.description}
         </div>
       )}
-      <ErrorMessage
-        errorMessageProps={errorMessageProps}
-        message={errorMessage}
-      />
     </div>
   );
 };

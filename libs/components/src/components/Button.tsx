@@ -15,7 +15,7 @@ export const Button = (props: AriaButtonProps) => {
         ref={ref}
         {...buttonProps}
         className={cx(
-          "flex w-full items-center h-10 bg-primary text-white font-bold text-sm uppercase rounded justify-center gap-2 transition-all",
+          "flex w-full items-center h-10 bg-primary text-white font-bold text-sm uppercase justify-center gap-2 transition-all",
           {
             "opacity-50": isDisabled,
           },

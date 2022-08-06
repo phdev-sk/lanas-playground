@@ -19,6 +19,10 @@ module.exports = {
           ...colors.indigo,
           DEFAULT: colors.indigo["500"],
         },
+        slate: {
+          ...colors.slate,
+          900: "#1a2332",
+        },
       },
       boxShadow: {
         focus: "0 0 0 4px rgba(0, 0, 0, 0.3)",

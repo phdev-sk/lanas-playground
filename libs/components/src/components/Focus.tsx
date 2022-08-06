@@ -28,7 +28,7 @@ export const Focus = ({
         className,
       )}
     >
-      <div className={cx("rounded group w-full transition-all", className)}>
+      <div className={cx("group w-full transition-all", className)}>
         {children}
       </div>
     </FocusRing>

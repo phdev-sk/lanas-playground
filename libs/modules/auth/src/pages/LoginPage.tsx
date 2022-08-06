@@ -7,6 +7,7 @@ import {
   ErrorMessage,
   Focus,
   Input,
+  LanaLogo,
 } from "@lana/components";
 import { AuthModule } from "..";
 import { ArrowRight, Loader } from "react-feather";
@@ -58,7 +59,7 @@ export const LoginPage: RouteComponent<AuthModule> = () => {
   });
 
   return (
-    <div className="w-full h-full bg-slate-200 dark:bg-slate-900 flex flex-col items-start md:items-center md:justify-center p-4 gap-4">
+    <div className="w-full h-full bg-slate-100 dark:bg-slate-900 flex flex-col items-start md:items-center md:justify-center p-4 gap-4">
       <div className="md:absolute top-4 left-4">
         <DarkmodeSwitch />
       </div>
@@ -66,24 +67,11 @@ export const LoginPage: RouteComponent<AuthModule> = () => {
         initial={{ y: 24, opacity: 0 }}
         transition={{ delay: 1, duration: 0.5 }}
         animate={{ y: 0, opacity: 1 }}
-        className="bg-primary-600 max-w-sm mx-auto md:max-w-xl w-full dark:bg-slate-700 flex flex-col-reverse md:flex-row overflow-auto rounded-lg shadow-2xl"
+        className="bg-primary-600 rounded-xl max-w-sm mx-auto w-full dark:bg-slate-700 flex flex-col-reverse md:flex-row overflow-auto border dark:border-slate-700"
       >
-        <div className="w-full md:w-64 text-white flex flex-col items-center p-3 md:px-8 md:py-12 justify-between">
-          <div className="hidden md:block text-3xl font-bold">
-            {t("welcomeBack")}
-          </div>
-          <div className="">
-            <span>{t("dontHaveAnAccount")} </span>
-            <a href="/register" className="underline">
-              {t("requestNewAccount")}
-            </a>
-          </div>
-        </div>
-        <div className="h-full overflow-auto bg-white dark:text-white dark:bg-slate-800 rounded-b-lg md:rounded-l-lg md:max-w-sm w-full px-8 py-12 flex flex-col gap-8">
+        <div className="h-full overflow-auto bg-white dark:text-white dark:bg-slate-800 w-full px-8 py-12 flex flex-col gap-8">
           <div className="flex flex-col items-center gap-4">
-            <div className="bg-primary select-none flex items-center justify-center px-4 h-12 rounded text-white text-4xl font-bold -skew-x-12">
-              lana
-            </div>
+            <LanaLogo />
             <h1 className="font-bold text-2xl">{t("signIn")}</h1>
             <div className="text-center">{t("signInDescription")}</div>
           </div>

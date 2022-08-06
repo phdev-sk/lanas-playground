@@ -1,0 +1,16 @@
+{
+  "name": "@lana/components",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "react": "^18.2.0"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "framer-motion": "^7.0.0",
+    "react-aria": "^3.18.0",
+    "react-feather": "^2.0.10",
+    "react-resize-detector": "^7.1.2",
+    "react-stately": "^3.16.0"
+  }
+}

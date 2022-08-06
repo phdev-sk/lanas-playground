@@ -1,0 +1,10 @@
+{
+  "name": "lana",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "libs/core",
+    "libs/components",
+    "libs/modules/*"
+  ]
+}

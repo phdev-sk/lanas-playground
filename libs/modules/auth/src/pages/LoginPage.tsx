@@ -58,7 +58,7 @@ export const LoginPage: RouteComponent<AuthModule> = () => {
   });
 
   return (
-    <div className="w-full h-full bg-slate-200 dark:bg-slate-900 flex flex-col items-start md:items-center md:justify-center p-4 gap-8">
+    <div className="w-full h-full bg-slate-200 dark:bg-slate-900 flex flex-col items-start md:items-center md:justify-center p-4 gap-4">
       <div className="md:absolute top-4 left-4">
         <DarkmodeSwitch />
       </div>
@@ -66,9 +66,9 @@ export const LoginPage: RouteComponent<AuthModule> = () => {
         initial={{ y: 24, opacity: 0 }}
         transition={{ delay: 1, duration: 0.5 }}
         animate={{ y: 0, opacity: 1 }}
-        className="bg-primary-600 max-w-sm mx-auto md:max-w-xl w-full dark:bg-slate-700 flex flex-col-reverse md:flex-row overflow-hidden rounded-lg shadow-2xl"
+        className="bg-primary-600 max-w-sm mx-auto md:max-w-xl w-full dark:bg-slate-700 flex flex-col-reverse md:flex-row overflow-auto rounded-lg shadow-2xl"
       >
-        <div className="w-full md:w-64 text-white flex flex-col items-center px-8 py-12 justify-between">
+        <div className="w-full md:w-64 text-white flex flex-col items-center p-3 md:px-8 md:py-12 justify-between">
           <div className="hidden md:block text-3xl font-bold">
             {t("welcomeBack")}
           </div>
@@ -79,7 +79,7 @@ export const LoginPage: RouteComponent<AuthModule> = () => {
             </a>
           </div>
         </div>
-        <div className=" bg-white dark:text-white dark:bg-slate-800 rounded-l-lg md:max-w-sm w-full px-8 py-12 flex flex-col gap-8">
+        <div className="h-full overflow-auto bg-white dark:text-white dark:bg-slate-800 rounded-b-lg md:rounded-l-lg md:max-w-sm w-full px-8 py-12 flex flex-col gap-8">
           <div className="flex flex-col items-center gap-4">
             <div className="bg-primary select-none flex items-center justify-center px-4 h-12 rounded text-white text-4xl font-bold -skew-x-12">
               lana
